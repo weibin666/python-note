@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--    加载静态资源-->
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>项目主页</title>
+</head>
+<body>
+<h1>项目首页</h1>
+<a href="/page1/">page1</a>
+<a href="/page2/">page2</a>
+<a href="/page3/">page3</a>
+<!--http://127.0.0.1:8000/static/gao.jpeg-->
+<img src="/static/gao.jpeg" alt="">
+<img src="{% static 'gao.jpeg' %}" alt="">
+</body>
+</html>
