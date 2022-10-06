@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>修改</h1>
+<form action="/book/modify/" method="post">
+    {% csrf_token %}
+    ID: <input type="text" placeholder="{{book.id}}" name="id" value="{{book.id}}">
+    书名: <input type="text" placeholder="{{book.title}}" name="title" value="{{book.title}}">
+    出版社: <input type="text" placeholder="{{book.pub}}" name="pub" value="{{book.pub}}">
+    定价: <input type="text" placeholder="{{book.price}}" name="price" value="{{book.price}}">
+    零售价: <input type="text" placeholder="{{book.market_price}}" name="market_price" value="{{book.market_price}}">
+    <div>
+        <input type="submit" value="保存">
+    </div>
+</form>
+</body>
+</html>
